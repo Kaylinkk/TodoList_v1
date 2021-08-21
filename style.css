@@ -1,0 +1,200 @@
+.hidden {
+  display: none;
+}
+#conA {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 100%;
+  max-height: 100%;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  overflow: auto;
+  position: fixed;
+  right: 0;
+  top: 0;
+  background-size: cover;
+}
+
+.container {
+  width: 70%;
+  height: 80%;
+  background: rgba(255, 255, 255, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-input {
+  font-family: "Fredericka the Great", cursive;
+  font-size: 50px;
+  background-color: transparent;
+  border: none;
+  width: 500px;
+}
+
+.login-input:focus {
+  outline: none;
+}
+
+.login-btn {
+  border-radius: 30px;
+  background-color: transparent;
+  position: relative;
+  top: 3px;
+  right: 30px;
+  box-shadow: 1px 3px grey;
+}
+.login-btn:active {
+  box-shadow: none;
+}
+i {
+  font-size: 30px;
+}
+
+#greeting {
+  font-size: 60px;
+  position: absolute;
+  top: 70px;
+  font-family: "Patrick Hand SC", cursive;
+}
+#insideBox {
+  width: -webkit-fill-available;
+  height: auto;
+}
+.inside {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.inside-left {
+  overflow: auto;
+  width: 45%;
+  max-height: 446px;
+  border: 2px solid #fff;
+  border-radius: 10px;
+}
+
+.inside-left::-webkit-scrollbar {
+  display: none;
+}
+
+.inside-right {
+  width: 45%;
+}
+
+#todo-Form {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+}
+
+#todo-List {
+  padding: 0;
+}
+
+input {
+  font-family: "Fredericka the Great", "Poor Story", cursive;
+  font-size: 30px;
+  background-color: transparent;
+  border: none;
+  width: 330px;
+}
+
+input:focus {
+  outline: none;
+}
+
+li {
+  font-family: "Patrick Hand", "Poor Story", cursive;
+  font-size: 30px;
+  list-style: none;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  background: #e9e2fe;
+  opacity: 0.8;
+  margin-bottom: 5px;
+}
+
+li:nth-child(odd) {
+  background: #f8e2fe;
+  opacity: 0.8;
+}
+
+li:hover {
+  background: #ddd;
+}
+
+button {
+  font-size: 20px;
+  border: 1px solid transparent;
+  border-radius: 50px;
+  padding: 10px;
+  background-color: transparent;
+  float: right;
+  position: relative;
+  bottom: 5px;
+}
+
+button:active {
+  border: 2px solid #e6e6ef;
+}
+
+#weather {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 22%;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+#weather div:nth-child(1) {
+  font-family: "Fredericka the Great", cursive;
+  font-size: 40px;
+}
+#weather div:nth-child(2) {
+  font-family: "Fredericka the Great", cursive;
+  font-size: 25px;
+}
+#weather div:nth-child(3) {
+  font-family: "Fredericka the Great", cursive;
+  font-size: 15px;
+}
+
+#clock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50%;
+  border: 2px solid #fff;
+  border-radius: 10px;
+}
+.clockBox {
+  font-size: 80px;
+  font-family: "Rampart One", cursive;
+}
+
+#quotes {
+  width: 100%;
+  height: 22%;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.quote {
+  text-align: center;
+  font-size: 20px;
+  font-family: "Patrick Hand", cursive;
+}

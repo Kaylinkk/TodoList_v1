@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Patrick+Hand+SC&family=Poor+Story&family=Rampart+One&display=swap" rel="stylesheet">
+    <script defer src="/js/background.js"></script>
+    <script defer src="/js/login.js"></script>
+    <script defer src="/js/todolist.js"></script>
+    <script defer src="/js/weather.js"></script>
+    <script defer src="/js/clock.js"></script>
+    <script defer src="/js/quote.js"></script>
+    
+    <title>To-do List</title>
+  </head>
+  <body>
+    <section id="conA">
+      <div class="container">
+        <form action="" id="login-form">
+          <input
+            class="login-input"
+            type="text"
+            required
+            placeholder="What is your name?"
+            maxlength="15"
+          />
+          <button class="login-btn">
+            <i class="far fa-paper-plane"></i>
+          </button>
+        </form>
+
+        <h2 id="greeting" class="hidden"></h2>
+<div id="insideBox" class="hidden">
+        <section class="inside">
+          <div class="inside-left">
+            <div id="todo">
+              <form id="todo-Form">
+                <input type="text" placeholder="what is your plan?" required />
+              </form>
+              <ul id="todo-List"></ul>
+            </div>
+          </div>
+          <div class="inside-right">
+            <div id ="weather">
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+            <div id ="clock">
+              <h2 class="clockBox"></h2>
+            </div>
+            <div id ="quotes">
+              <p class="quote"></p>
+            </div>
+          </div>
+        </section>
+      </div>
+      </div>
+     
+  </body>
+</html>
