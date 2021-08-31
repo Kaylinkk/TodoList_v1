@@ -1,9 +1,24 @@
+:root {
+  --pink-color: #f8e2fe;
+  --purple-color: #e9e2fe;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
 .hidden {
   display: none;
 }
+
 #conA {
   display: flex;
   justify-content: center;
+  background-size: cover;
   align-items: center;
   min-width: 100%;
   max-height: 100%;
@@ -14,16 +29,18 @@
   position: fixed;
   right: 0;
   top: 0;
-  background-size: cover;
 }
 
 .container {
+  background: rgba(255, 255, 255, 0.8);
   width: 70%;
   height: 80%;
-  background: rgba(255, 255, 255, 0.8);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+}
+
+.formBox {
+  display: grid;
+  place-items: center;
+  min-height: 70%;
 }
 
 .login-input {
@@ -31,38 +48,38 @@
   font-size: 50px;
   background-color: transparent;
   border: none;
-  width: 500px;
 }
-
 .login-input:focus {
   outline: none;
 }
 
 .login-btn {
-  border-radius: 30px;
+  line-height: 30px;
+  border-radius: 50%;
   background-color: transparent;
-  position: relative;
-  top: 3px;
-  right: 30px;
   box-shadow: 1px 3px grey;
 }
+
 .login-btn:active {
   box-shadow: none;
 }
+
 i {
+  padding-top: 5px;
+  padding-right: 2px;
   font-size: 30px;
 }
 
+.gretting_Box {
+  display: flex;
+  justify-content: center;
+}
+
 #greeting {
-  font-size: 60px;
-  position: absolute;
-  top: 70px;
+  font-size: 50px;
   font-family: "Patrick Hand SC", cursive;
 }
-#insideBox {
-  width: -webkit-fill-available;
-  height: auto;
-}
+
 .inside {
   width: 100%;
   height: 100%;
@@ -81,7 +98,6 @@ i {
 .inside-left::-webkit-scrollbar {
   display: none;
 }
-
 .inside-right {
   width: 45%;
 }
@@ -89,9 +105,12 @@ i {
 #todo-Form {
   display: flex;
   justify-content: center;
-  margin-top: 20px;
-  margin-bottom: 30px;
   border-radius: 10px;
+  top: 0;
+  position: sticky;
+  z-index: 2;
+  background-color: var(--purple-color);
+  padding: 10px 0;
 }
 
 #todo-List {
@@ -100,8 +119,8 @@ i {
 
 input {
   font-family: "Fredericka the Great", "Poor Story", cursive;
-  font-size: 30px;
-  background-color: transparent;
+  font-size: 25px;
+  background-color: var(--purple-color);
   border: none;
   width: 330px;
 }
@@ -112,19 +131,19 @@ input:focus {
 
 li {
   font-family: "Patrick Hand", "Poor Story", cursive;
-  font-size: 30px;
+  font-size: 25px;
   list-style: none;
   border: 1px solid transparent;
   border-radius: 10px;
   position: relative;
   padding: 12px 8px 12px 40px;
-  background: #e9e2fe;
+  background: var(--purple-color);
   opacity: 0.8;
   margin-bottom: 5px;
 }
 
 li:nth-child(odd) {
-  background: #f8e2fe;
+  background: var(--pink-color);
   opacity: 0.8;
 }
 
@@ -152,10 +171,11 @@ button:active {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  height: 22%;
+  height: auto;
   border: 2px solid #fff;
   border-radius: 10px;
   margin-bottom: 10px;
+  padding: 10px 0;
 }
 
 #weather div:nth-child(1) {
@@ -181,7 +201,7 @@ button:active {
   border-radius: 10px;
 }
 .clockBox {
-  font-size: 80px;
+  font-size: 70px;
   font-family: "Rampart One", cursive;
 }
 
@@ -197,4 +217,77 @@ button:active {
   text-align: center;
   font-size: 20px;
   font-family: "Patrick Hand", cursive;
+}
+
+@media all and (min-width: 768px) and (max-width: 1023px) {
+  #greeting {
+    font-size: 40px;
+  }
+
+  .clockBox {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #greeting {
+    font-size: 30px;
+  }
+
+  .login-input {
+    font-size: 30px;
+    background-color: transparent;
+    border: none;
+  }
+
+  .login-btn {
+    line-height: 20px;
+  }
+
+  i {
+    padding-top: 5px;
+    padding-right: 2px;
+    font-size: 20px;
+  }
+
+  .inside {
+    display: block;
+  }
+
+  .inside-left {
+    overflow: scroll;
+    width: 100%;
+    max-height: 200px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+
+  .inside-right {
+    width: 100%;
+  }
+
+  input {
+    font-size: 20px;
+    background-color: transparent;
+    border: none;
+    width: 330px;
+  }
+
+  li {
+    font-size: 15px;
+  }
+
+  button {
+    font-size: 15px;
+  }
+
+  #weather div:nth-child(1) {
+    font-family: "Fredericka the Great", cursive;
+    font-size: 25px;
+  }
+
+  .clockBox {
+    font-size: 40px;
+  }
 }
