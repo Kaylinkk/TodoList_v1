@@ -2,6 +2,7 @@ const loginForm = document.querySelector("#login-form");
 const loginInput = loginForm.querySelector("input");
 const greeting = document.querySelector("#greeting");
 const inside = document.querySelector("#insideBox");
+const formationBox = document.querySelector(".formBox");
 const HIDDEN_CLASS ="hidden"
 const USERNAME_KEY ="username"
 
@@ -18,6 +19,8 @@ function welcomeSign(username){
     greeting.innerText = `Hello, ${username}`
     greeting.classList.remove(HIDDEN_CLASS);
     inside.classList.remove(HIDDEN_CLASS);
+    formationBox.classList.toggle("formBox");
+    
     }
 
 
