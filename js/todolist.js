@@ -29,6 +29,7 @@ function writingPlan(newTodoObj){
     const span = document.createElement("span");
     span.innerText = newTodoObj.text;
     const button = document.createElement("button");
+    button.className="btn_bomb"
     button.innerText ="🧨";
     button.addEventListener("click", deletingTodo)
     list.appendChild(span);
